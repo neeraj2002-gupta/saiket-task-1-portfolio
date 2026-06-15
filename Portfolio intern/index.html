@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--
+  Akash Portfolio - Static Personal Portfolio Website
+  Built with HTML5, CSS3, JavaScript and Bootstrap 5
+  Fully responsive: mobile, tablet, desktop
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neeraj Gupta Portfolio | Full Stack Development Intern</title>
+  <meta name="description" content="Personal portfolio of Neeraj - Full Stack Development Intern. Projects, skills and contact." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <span class="accent">&lt;/&gt;</span> Neeraj Portfolio
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / HOME ===== -->
+  <header id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <p class="hero-eyebrow mb-2">Welcome to my portfolio</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent">Neeraj</span>
+          </h1>
+          <h2 class="hero-subtitle">Full Stack Development Intern</h2>
+          <p class="hero-text">
+            I'm passionate about building modern, responsive and user-friendly
+            web applications. I love turning ideas into clean code and learning
+            new technologies every day.
+          </p>
+          <a href="#projects" class="btn btn-accent btn-lg mt-3">
+            <i class="bi bi-rocket-takeoff me-2"></i>View Projects
+          </a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <!-- Profile image -->
+          <div class="profile-wrapper mx-auto">
+            <img src="profile.jpg" alt="Neeraj profile photo" class="profile-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <p class="section-subtitle">A short professional introduction</p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="custom-card p-4 p-md-5">
+            <p class="mb-3">
+              I'm an aspiring <strong>Full Stack Developer</strong> currently
+              focused on learning modern web development and building
+              real-world projects. I enjoy crafting clean interfaces,
+              writing maintainable code, and solving practical problems.
+            </p>
+            <p class="mb-0 text-secondary-custom">
+              My current journey is around mastering the fundamentals of HTML,
+              CSS, JavaScript and frameworks like Bootstrap and React, while
+              exploring backend tools such as Node.js and MongoDB. I'm always
+              open to internship opportunities and collaborations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <p class="section-subtitle">Technologies I work with</p>
+
+      <div class="row g-3 g-md-4">
+        <!-- Skill cards generated below -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <i class="bi bi-filetype-html"></i>
+            <h5>HTML</h5>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <i class="bi bi-filetype-css"></i>
+            <h5>CSS</h5>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <i class="bi bi-filetype-js"></i>
+            <h5>JavaScript</h5>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <i class="bi bi-bootstrap"></i>
+            <h5>Bootstrap</h5>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <i class="bi bi-code-square"></i>
+            <h5>React</h5>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <i class="bi bi-hdd-network"></i>
+            <h5>Node.js</h5>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <i class="bi bi-database"></i>
+            <h5>MongoDB</h5>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="skill-card">
+            <i class="bi bi-git"></i>
+            <h5>Git</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <p class="section-subtitle">A few things I've been working on</p>
+
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card h-100">
+            <div class="project-image">
+              <i class="bi bi-window-stack"></i>
+            </div>
+            <div class="project-body">
+              <h4>Portfolio Website</h4>
+              <p>
+                A clean, responsive personal portfolio built with HTML, CSS,
+                JavaScript and Bootstrap 5.
+              </p>
+              <button class="btn btn-outline-accent btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card h-100">
+            <div class="project-image">
+              <i class="bi bi-bag-check"></i>
+            </div>
+            <div class="project-body">
+              <h4>E-Commerce Landing Page</h4>
+              <p>
+                A modern, mobile-first e-commerce landing page with product
+                cards, hero banner and pricing.
+              </p>
+              <button class="btn btn-outline-accent btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card h-100">
+            <div class="project-image">
+              <i class="bi bi-people"></i>
+            </div>
+            <div class="project-body">
+              <h4>User Management System</h4>
+              <p>
+                CRUD-based user management dashboard demonstrating forms,
+                tables and client-side validation.
+              </p>
+              <button class="btn btn-outline-accent btn-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="section-subtitle">Have a project in mind? Let's talk.</p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="custom-card p-4 p-md-5">
+            <!-- Contact form with JS validation -->
+            <form id="contactForm" novalidate>
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="name"
+                  placeholder="Your full name"
+                />
+                <small class="error-message" id="nameError"></small>
+              </div>
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  id="email"
+                  placeholder="you@example.com"
+                />
+                <small class="error-message" id="emailError"></small>
+              </div>
+              <!-- Message -->
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control custom-input"
+                  id="message"
+                  rows="5"
+                  placeholder="Write your message..."
+                ></textarea>
+                <small class="error-message" id="messageError"></small>
+              </div>
+
+              <button type="submit" class="btn btn-accent w-100">
+                <i class="bi bi-send me-2"></i>Send Message
+              </button>
+
+              <!-- Success message -->
+              <div
+                class="success-message mt-3 d-none"
+                id="successMessage"
+                role="alert"
+              >
+                <i class="bi bi-check-circle-fill me-2"></i>
+                Your message has been sent successfully!
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="social-icons mb-3">
+        <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+      <p class="mb-0 text-secondary-custom">
+        &copy; <span id="year"></span> Neeraj. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
